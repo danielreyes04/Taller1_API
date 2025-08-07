@@ -46,7 +46,6 @@ button {
     padding: 15px 30px;
     font-size: 19px;
     cursor: pointer;
-    text-align: center;
 }
 img {
     display: block;              /* Hace que la imagen se comporte como bloque */
@@ -62,3 +61,4 @@ img {
 img:hover {
     transform: scale(1.05); /* Agranda ligeramente la imagen */
 }
+

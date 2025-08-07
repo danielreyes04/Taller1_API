@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Explorador NASA</title>
+    <link rel="stylesheet" href="../css/stylesNasa.css">
+  </head>
+  <body>
+    <h1>Explorador de APIs NASA</h1>
+
+    <!-- Menú de inicio -->
+    <div class="menu">
+      <h2>Selecciona una opción:</h2>
+      <button onclick="showModule('apod')">📸 Imágenes Astronómica del Día</button>
+      <button onclick="showModule('wms')">🛰️ Capas Satelitales</button>
+      <button onclick="showModule('mars')">🚀 Fotos del Rover Curiosity</button>
+      <button onclick="showModule('tech')">🔧 Patentes Tecnológicas</button>
+    </div>
+
+    <!-- APOD Module -->
+    <div class="module" id="apod">
+      <h2>🌌 Imágenes Astronómica del Día (APOD)</h2>
+      <input type="date" id="apodDate">
+      <button onclick="fetchMultipleAPOD()">Consultar</button>
+      <div id="apodResult"></div>
+    </div>
+
+    <!-- WMS Layers -->
+    <div class="module" id="wms">
+      <h2>🛰️ Capas Satelitales (WMS)</h2>
+      <div id="wmsResult"></div>
+    </div>
+
+    <!-- Mars Rover Photos -->
+    <div class="module" id="mars">
+      <h2>🚀 Fotos del Rover Curiosity</h2>
+      <input type="number" id="sol" placeholder="Sol (día marciano)">
+      <button onclick="fetchMarsPhotos()">Consultar</button>
+      <div id="marsResult"></div>
+    </div>
+
+    <!-- Tech Transfer -->
+    <div class="module" id="tech">
+      <h2>🔧 Patentes Tecnológicas (TechTransfer)</h2>
+      <button onclick="fetchTechTransfer()">Consultar</button>
+      <div id="techResult"></div>
+    </div>
+
+    <div class = "Atras">
+        <a href="../index.html"><button>Atrás</button></a>
+    </div>
+    <script src="../js/nasa.js"></script>
+  </body>
+
+</html>

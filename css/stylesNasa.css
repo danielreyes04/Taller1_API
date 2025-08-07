@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color:#2c3e50;
+}
+
+.module{
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+}
+
+img {
+  width: 500px;
+  height: 450px;
+  margin-top: 10px;
+}
+
+.item{
+  margin-bottom: 20px;
+}
+
+.menu button{
+  margin: 10px auto;
+  padding: 15px 30px;
+  font-size: 19px;
+  cursor: pointer;
+}
+.Atras button{
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 19px;
+    cursor: pointer;
+}
