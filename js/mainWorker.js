@@ -1,8 +1,10 @@
+// obtiene el boton y el contenedor por su id 
+
 const btn = document.getElementById("btnUbicacion");
 const resultado = document.getElementById("resultado");
 
 // Crear el Worker
-const worker = new Worker("worker.js");
+const worker = new Worker("../js/worker.js");
 
 btn.addEventListener("click", () => {
   if ("geolocation" in navigator) {
