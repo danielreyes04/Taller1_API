@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Búsqueda dinámica con historial</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, button { padding: 10px; margin: 5px 0; width: 100%; box-sizing: border-box; }
+        .resultados { margin-top: 20px; }
+        .resultado { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; background: #f1f1f1; }
+        .volver-btn { margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Buscar contenido</h2>
+    <input type="text" id="busquedaInput" placeholder="Ingresa un término (ej. universidad, NASA)">
+    <button onclick="buscar()">Buscar</button>
+
+    <div id="resultados" class="resultados"></div>
+    <button class="volver-btn" onclick="history.back()">⬅️ Retroceder búsqueda</button>
+
+    <script src="../js/busqueda.js"></script>
+</body>
+</html>
