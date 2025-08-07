@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario con Validación</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label { display: block; margin-top: 10px; }
+    input { margin-bottom: 10px; }
+    .output { margin-top: 20px; background: #f4f4f4; padding: 10px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <h2>Formulario de Registro</h2>
+
+  <form id="registroForm" novalidate>
+    <label>Nombre:
+      <input type="text" id="nombre" required>
+    </label>
+
+    <label>Correo Electrónico:
+      <input type="email" id="correo" required>
+    </label>
+
+    <label>Edad:
+      <input type="number" id="edad" required>
+    </label>
+
+    <button type="submit">Guardar</button>
+    <button type="button" onclick="mostrarDatos()">Mostrar Datos</button>
+  </form>
+
+  <div id="resultado" class="output"></div>
+
+  <script src="formulario.js"></script>
+</body>
+</html>
