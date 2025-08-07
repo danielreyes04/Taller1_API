@@ -1,0 +1,64 @@
+section {
+  max-width: 1700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9ff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+section ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style: disc;
+  
+}
+
+section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+code {
+  background-color: #eef;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+button {
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 19px;
+    cursor: pointer;
+    text-align: center;
+}
+img {
+    display: block;              /* Hace que la imagen se comporte como bloque */
+    margin: 20px auto;           /* Centra horizontalmente */
+    max-width: 100%;             /* Se adapta al ancho del contenedor */
+    height: auto;                /* Mantiene proporción */
+    border-radius: 12px;         /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+/* Efecto al pasar el cursor por encima */
+img:hover {
+    transform: scale(1.05); /* Agranda ligeramente la imagen */
+}
