@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <title>Búsqueda dinámica con historial</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        input, button { padding: 10px; margin: 5px 0; width: 100%; box-sizing: border-box; }
-        .resultados { margin-top: 20px; }
-        .resultado { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; background: #f1f1f1; }
-        .volver-btn { margin-top: 10px; }
-    </style>
+    <link rel="stylesheet" href="../css/stylesBusqueda.css">
 </head>
 <body>
 
     <h2>Buscar contenido</h2>
-    <input type="text" id="busquedaInput" placeholder="Ingresa un término (ej. universidad, NASA)">
-    <button onclick="buscar()">Buscar</button>
+    <input type="text" id="busquedaInput" placeholder="Ingresa un término (ej. universidad, NASA, magnam)">
+    <div class="buscar-container">
+        <button onclick="buscar()">Buscar</button>
+    </div>
+
 
     <div id="resultados" class="resultados"></div>
-    <button class="volver-btn" onclick="history.back()">⬅️ Retroceder búsqueda</button>
+    <div class="center-container">
+        <button class="volver-btn" onclick="history.back()">⬅️ Retroceder búsqueda</button>
+    </div>
 
     <div class = "Atras">
         <a href="../index.html"><button>Atrás</button></a>

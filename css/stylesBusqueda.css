@@ -1,0 +1,44 @@
+body {
+    font-family: Arial,sans-serif; 
+    padding: 20px; 
+}
+input, button { 
+    padding: 10px; 
+    margin: 10px 0; 
+    width: 50%; 
+    box-sizing: border-box; 
+}
+.resultados { 
+    margin-top: 20px;
+}
+.resultado { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background: #f1f1f1; 
+}
+.center-container {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  margin-top: 20px;        /* Espacio superior opcional */
+}
+.buscar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.Atras a{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;   
+}
+h2{
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+input{
+    display: block;
+    margin: 0 auto;
+}
